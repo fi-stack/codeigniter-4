@@ -2,16 +2,16 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class Coba extends BaseController
 {
 	public function index()
 	{
-		return view('welcome_message');
+		echo 'Ini controller Coba method Index';
 	}
 
-	public function coba()
+	public function about($nama = '')
 	{
-		echo $this->nama;
+		echo "Halo, nama saya $nama.";
 	}
 	//--------------------------------------------------------------------
 
