@@ -9,7 +9,7 @@
                 <a class="nav-link" href="/">Home</a>
                 <a class="nav-link" href="/pages/about">About</a>
                 <a class="nav-link" href="/pages/contact">Contact</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="/komik">Komik</a>
             </div>
         </div>
     </div>
