@@ -7,11 +7,9 @@ class Pages extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Home | My Website',
+            'title' => 'Home | My Website'
         ];
-        echo view('components/header', $data);
-        echo view('pages/home');
-        echo view('components/footer');
+        return view('pages/home', $data);
     }
 
     public function about()
@@ -19,9 +17,27 @@ class Pages extends BaseController
         $data = [
             'title' => 'About | My Website'
         ];
-        echo view('components/header', $data);
-        echo view('pages/about');
-        echo view('components/footer');
+        return view('pages/about', $data);
+    }
+
+    public function contact()
+    {
+        $data = [
+            'title' => 'Contact | My Website',
+            'alamat' => [
+                [
+                    'tipe' => 'rumah',
+                    'alamat' => 'Jl. abc No. 123',
+                    'kota' => 'Bandung'
+                ],
+                [
+                    'tipe' => 'Kantor',
+                    'alamat' => 'Jl. Setiabudi No. 193',
+                    'kota' => 'Bandung'
+                ]
+            ]
+        ];
+        return view('pages/contact', $data);
     }
 
     //--------------------------------------------------------------------
